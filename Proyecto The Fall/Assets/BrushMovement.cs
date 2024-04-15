@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BrushMovement : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class BrushMovement : MonoBehaviour
             {
                 // Detener la animación si es necesario
                 // Destruir todos los assets con un fade (requiere implementación adicional)
+                SceneManager.LoadScene("EscenaPelos");
                 Debug.Log("Assets destruidos después de 5 segundos de movimiento.");
 
             }

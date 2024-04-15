@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement; // Necesario para cargar escenas
 
 public class SpriteChangerWithFade : MonoBehaviour
 {
@@ -33,7 +33,9 @@ public class SpriteChangerWithFade : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false); // Desactiva el objeto si no hay más sprites
+            // Si estamos en el último sprite, cargamos la escena "EscenaCepillo"
+            SceneManager.LoadScene("EscenaDientes");
+            yield break; // Salimos de la corrutina para evitar que se realice el fade in
         }
 
         // Fade In
@@ -59,4 +61,3 @@ public class SpriteChangerWithFade : MonoBehaviour
         }
     }
 }
-

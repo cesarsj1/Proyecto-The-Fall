@@ -1,89 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Necesario para cargar escenas
 
 public class CambiadorSpriteZona : MonoBehaviour
 {
     public Sprite[] sprites;
     private int spriteIndex = 0;
-    private bool isMoving = false;
-    private bool changingSprite = false;
-    private bool forwardDirection = true; // Dirección del bucle de sprites
-    public Transform limiteSuperior;
-    public Transform limiteInferior;
+    private bool isClickable = true; // Para controlar si el objeto es clickable
     public float fadeDuration = 0.5f; // Duración del fade
-
-    private void Update()
-    {
-        if (isMoving && !changingSprite)
-        {
-            if (forwardDirection)
-            {
-                if (spriteIndex == 3 && transform.position.y >= limiteSuperior.position.y)
-                {
-                    CambiarSprite();
-                }
-            }
-            else
-            {
-                if (spriteIndex == 4 && transform.position.y <= limiteInferior.position.y)
-                {
-                    CambiarSprite();
-                }
-            }
-        }
-    }
 
     private void OnMouseDown()
     {
-        isMoving = true;
-    }
-
-    private void OnMouseUp()
-    {
-        isMoving = false;
-    }
-
-    private void CambiarSprite()
-    {
-        isMoving = false; // Detiene el movimiento mientras se cambia el sprite
-        changingSprite = true;
-
-        // Cambio de sprite
-        if (forwardDirection)
+        if (isClickable)
         {
-            spriteIndex = 4; // Cambiar al índice de la imagen 4
+            StartCoroutine(ChangeSpriteAfterDelay(fadeDuration));
+        }
+    }
+
+    IEnumerator ChangeSpriteAfterDelay(float delay)
+    {
+        isClickable = false; // Deshabilita clics durante el cambio
+
+        // Fade Out
+        yield return StartCoroutine(FadeSprite(1, 0, delay / 2)); // Fade out en la mitad del tiempo total
+
+        // Cambio de sprite después del fade out y espera
+        spriteIndex++;
+        if (spriteIndex < sprites.Length)
+        {
+            GetComponent<SpriteRenderer>().sprite = sprites[spriteIndex];
         }
         else
         {
-            spriteIndex = 3; // Cambiar al índice de la imagen 3
+            // Si estamos en el último sprite, cargamos la escena "EscenaCepillo"
+            SceneManager.LoadScene("EscenaPelos");
+            yield break; // Salimos de la corrutina para evitar que se realice el fade in
         }
-
-        StartCoroutine(ChangeSpriteWithFade(sprites[spriteIndex]));
-    }
-
-    IEnumerator ChangeSpriteWithFade(Sprite nuevoSprite)
-    {
-        // Fade Out
-        yield return StartCoroutine(FadeSprite(1, 0, fadeDuration / 2)); // Fade out en la mitad del tiempo total
-
-        // Cambia el sprite
-        GetComponent<SpriteRenderer>().sprite = nuevoSprite;
 
         // Fade In
-        yield return StartCoroutine(FadeSprite(0, 1, fadeDuration / 2)); // Fade in en la mitad del tiempo total
+        yield return StartCoroutine(FadeSprite(0, 1, delay / 2)); // Fade in en la mitad del tiempo total
 
-        // Cambiar la dirección del bucle de sprites cuando se complete el movimiento
-        if (forwardDirection)
-        {
-            forwardDirection = false;
-        }
-        else
-        {
-            forwardDirection = true;
-        }
+        yield return new WaitForSeconds(0.5f); // Espera adicional antes de permitir otro clic
 
-        changingSprite = false;
+        isClickable = true; // Re-habilita clics después del cambio y espera
     }
 
     IEnumerator FadeSprite(float startAlpha, float endAlpha, float duration)
@@ -101,4 +61,3 @@ public class CambiadorSpriteZona : MonoBehaviour
         }
     }
 }
-
