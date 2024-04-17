@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenaPelos.unity
     guid: 859b234530ee5d547bc42b96bf13ec91
+  - enabled: 1
+    path: Assets/Scenes/Escena2.unity
+    guid: 50d2a876e8b37ea4a9f14159a74df07b
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 01224541c57de434d9aac8bd5d0d606c, type: 2}
