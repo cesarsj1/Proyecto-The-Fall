@@ -24,7 +24,7 @@ public class CepilloPeinar : MonoBehaviour
             {
                 // Detener la animación si es necesario
                 // Destruir todos los assets con un fade (requiere implementación adicional)
-                SceneManager.LoadScene("Escena2");
+                SceneManager.LoadScene("EscenaScroll");
                 Debug.Log("Assets destruidos después de 5 segundos de movimiento.");
 
             }
