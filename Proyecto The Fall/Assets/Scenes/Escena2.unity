@@ -170,11 +170,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 728249616b3429b46962ed10908798ff, type: 3}
-  - {fileID: 21300000, guid: b98fbd36439eb9d4997fe4ab5fa5796f, type: 3}
-  - {fileID: 21300000, guid: e126872b4e7982244ab24971377ff296, type: 3}
-  - {fileID: 21300000, guid: 25a3868f13a1cd840b6ad2eeffd117af, type: 3}
-  - {fileID: 21300000, guid: 5f33730c1ae4b094299790039f5acf3a, type: 3}
+  - {fileID: 21300000, guid: bc2a328f1c0b2ed46b2beee1507c5e8d, type: 3}
+  - {fileID: 21300000, guid: ce94c6cf96d27d848bac9a316b380004, type: 3}
+  - {fileID: 21300000, guid: af39f2bce56474d46923f58cebc09ef8, type: 3}
+  - {fileID: 21300000, guid: 197ae62ae85fd424084078bb139a522f, type: 3}
+  - {fileID: 21300000, guid: ca6031a998ac9c14faf606b7e9813cac, type: 3}
+  - {fileID: 21300000, guid: b70bc78fea92f394ca3e383707d8c5db, type: 3}
+  - {fileID: 21300000, guid: 0ff7a1bb6009b7a4eaa5acf5f229e8ff, type: 3}
+  - {fileID: 21300000, guid: c1906155cbefea74c88c19baabb1f84b, type: 3}
   fadeDuration: 0.5
 --- !u!212 &530391047
 SpriteRenderer:
@@ -217,7 +220,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 728249616b3429b46962ed10908798ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc2a328f1c0b2ed46b2beee1507c5e8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
