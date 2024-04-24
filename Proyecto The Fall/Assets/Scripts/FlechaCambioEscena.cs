@@ -9,7 +9,7 @@ public class FlechaCambioEscena : MonoBehaviour
     public void Button1()
     {
         // Cambia a la escena especificada
-        SceneManager.LoadScene("EscenaEscalera");
+        SceneManager.LoadScene("Escena2");
     }
     // Start is called before the first frame update
     void Start()
