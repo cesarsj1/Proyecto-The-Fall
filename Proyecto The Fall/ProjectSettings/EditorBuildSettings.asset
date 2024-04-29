@@ -9,29 +9,35 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 0
-    path: Assets/Scenes/EscenaScroll.unity
+    path: Assets/Scenes/Chapter1/EscenaScroll.unity
     guid: b76188fed2e4c6e4fad03e4ace31b1da
   - enabled: 1
-    path: Assets/Scenes/Escena1.unity
+    path: Assets/Scenes/Chapter1/Escena1.unity
     guid: 36cb33965b615114892fc9ebee2bcbf6
   - enabled: 1
-    path: Assets/Scenes/EscenaDientes.unity
+    path: Assets/Scenes/Chapter1/EscenaDientes.unity
     guid: 7ec2c8dd344cfa5429d54815a914411c
   - enabled: 1
-    path: Assets/Scenes/EscenaPelos.unity
+    path: Assets/Scenes/Chapter1/EscenaPelos.unity
     guid: 859b234530ee5d547bc42b96bf13ec91
   - enabled: 1
-    path: Assets/Scenes/EscenaBajar.unity
+    path: Assets/Scenes/Chapter1/EscenaBajar.unity
     guid: ad15ddd80fe4c534fb687f061c9b2b3d
   - enabled: 1
-    path: Assets/Scenes/EscenaEscalera.unity
+    path: Assets/Scenes/Chapter1/EscenaEscalera.unity
     guid: c147ec87c2a6b124987019288167ba27
   - enabled: 1
-    path: Assets/Scenes/EscenaMetro.unity
+    path: Assets/Scenes/Chapter1/EscenaMetro.unity
     guid: 9153a60dc0dc33c4291317eb91607eaa
   - enabled: 1
-    path: Assets/Scenes/Escena2.unity
+    path: Assets/Scenes/Chapter1/Escena2.unity
     guid: 50d2a876e8b37ea4a9f14159a74df07b
+  - enabled: 1
+    path: Assets/Scenes/Chapter2/Escena2.1.unity
+    guid: 569012ecb021b2643be9c5de01113e8a
+  - enabled: 1
+    path: Assets/Scenes/Chapter2/EscenaCaja.unity
+    guid: 111d310dd9cdbf4488e42384fbe93555
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: f173f72d7927c4c4d9803b6cbd837e60, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 0653989e99b65824abc02574c14cd5c4, type: 2}
