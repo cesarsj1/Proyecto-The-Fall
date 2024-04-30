@@ -21,7 +21,7 @@ public class CepilloDientes : MonoBehaviour
             timeMoved += Time.deltaTime;
             if (timeMoved > 5f)
             {
-                SceneManager.LoadScene("EscenaBajar");
+                SceneManager.LoadScene("EscenaPelos");
                 Debug.Log("Assets destruidos después de 5 segundos de movimiento.");
             }
         }

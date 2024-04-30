@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Cambiar4 : MonoBehaviour
+public class Cambiar2 : MonoBehaviour
 {
     public Sprite[] sprites;
     private int spriteIndex = 0;
@@ -34,7 +34,7 @@ public class Cambiar4 : MonoBehaviour
         else
         {
             // Si estamos en el �ltimo sprite, cargamos la escena "EscenaCepillo"
-            SceneManager.LoadScene("Escena2.2");
+            SceneManager.LoadScene("Escena2.1");
             yield break; // Salimos de la corrutina para evitar que se realice el fade in
         }
 
@@ -60,4 +60,5 @@ public class Cambiar4 : MonoBehaviour
             yield return null;
         }
     }
+
 }
