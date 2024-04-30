@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BrushMovement : MonoBehaviour
+public class CepilloDientes : MonoBehaviour
 {
     private Vector3 startPosition;
     private float timeMoved = 0f;
     private bool isMoving = false;
-    public GameObject animationTarget; // Asigna el objeto con la animación aquí
 
     void Start()
     {
@@ -22,11 +21,8 @@ public class BrushMovement : MonoBehaviour
             timeMoved += Time.deltaTime;
             if (timeMoved > 5f)
             {
-                // Detener la animación si es necesario
-                // Destruir todos los assets con un fade (requiere implementación adicional)
-                SceneManager.LoadScene("EscenaPelos");
+                SceneManager.LoadScene("EscenaBajar");
                 Debug.Log("Assets destruidos después de 5 segundos de movimiento.");
-
             }
         }
 
@@ -36,15 +32,11 @@ public class BrushMovement : MonoBehaviour
             mousePosition.z = transform.position.z;
             transform.position = mousePosition;
             isMoving = true;
-            // Iniciar la animación
-            animationTarget.GetComponent<Animator>().Play("NombreDeTuAnimacion"); // Asegúrate de cambiar "NombreDeTuAnimacion"
         }
         else if (Input.GetMouseButtonUp(0))
         {
             transform.position = startPosition;
             isMoving = false;
-            // Opcional: Detener la animación si es necesario
         }
     }
 }
-
