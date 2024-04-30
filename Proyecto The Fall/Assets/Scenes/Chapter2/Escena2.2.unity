@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 507380630}
   - component: {fileID: 507380629}
-  - component: {fileID: 507380628}
+  - component: {fileID: 507380631}
   - component: {fileID: 507380627}
   m_Layer: 0
   m_Name: Secuencia1
@@ -187,25 +187,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.449999, y: 44.319153}
   m_EdgeRadius: 0
---- !u!114 &507380628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507380626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9577e51c9f91e794ca9022d94ba408dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: b755e52115ef6464bb1db21c1da01cb2, type: 3}
-  - {fileID: 21300000, guid: bcd6d2fd9da0c2a4882cb5364d8d9f68, type: 3}
-  - {fileID: 21300000, guid: 9a55abb4897a9364ca75bd009182a41f, type: 3}
-  - {fileID: 21300000, guid: af369fddda4f4354a9bb45bd52b277e1, type: 3}
-  - {fileID: 21300000, guid: d8940faab9a95554e9ad80cd68bb340c, type: 3}
-  fadeDuration: 0.5
 --- !u!212 &507380629
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -273,6 +254,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507380631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507380626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be91baee300504db33bf8e4c54eca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b755e52115ef6464bb1db21c1da01cb2, type: 3}
+  - {fileID: 21300000, guid: bcd6d2fd9da0c2a4882cb5364d8d9f68, type: 3}
+  - {fileID: 21300000, guid: 9a55abb4897a9364ca75bd009182a41f, type: 3}
+  fadeDuration: 0.5
 --- !u!1 &982070766
 GameObject:
   m_ObjectHideFlags: 0

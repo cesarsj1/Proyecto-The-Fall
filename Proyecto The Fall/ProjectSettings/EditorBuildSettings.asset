@@ -38,6 +38,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter2/EscenaCaja.unity
     guid: 111d310dd9cdbf4488e42384fbe93555
+  - enabled: 1
+    path: Assets/Scenes/Chapter2/Escena2.2.unity
+    guid: 2e2d66c94968ab74bb81939af7567512
+  - enabled: 1
+    path: Assets/Scenes/Chapter2/Escena2.3.unity
+    guid: e0df24f2d5235ee4f929a815e5961507
+  - enabled: 1
+    path: Assets/Scenes/Chapter2/EscenaAscensor.unity
+    guid: 45c0a1a929f9cb045b260aa478f6bd5d
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: f173f72d7927c4c4d9803b6cbd837e60, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 0653989e99b65824abc02574c14cd5c4, type: 2}
