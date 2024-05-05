@@ -4,19 +4,14 @@ using System.Collections;
 
 public class MoveToPositionAndChangeScene : MonoBehaviour
 {
-    private Vector3 targetPosition = new Vector3(0, 0, -20); // Nueva posición objetivo que incluye Z
-    private Vector3 originalScale; // Escala original del objeto
-    private Vector3 targetScale; // Escala objetivo del objeto
-    private float totalTime = 3f; // Tiempo total para moverse a la posición objetivo
-    private float elapsedTime = 0; // Tiempo transcurrido desde que comenzó el movimiento
+    public float speed = 1f; // Velocidad a la que el objeto se moverá hacia la posición deseada
     private bool isMoving = false; // Controla si el objeto debe moverse
+    private Vector3 targetPosition = new Vector3(0, 0, 0); // La posición objetivo a la que se moverá el objeto
     public GameObject fadeEffectObject; // El GameObject que tiene el script Desvanecer
     private Desvanecer fadeEffectScript; // Referencia al script Desvanecer
 
     void Start()
     {
-        originalScale = transform.localScale; // Guardar la escala original
-        targetScale = originalScale * 1.5f; // Calcular la escala objetivo (50% más grande)
         if (fadeEffectObject != null)
             fadeEffectScript = fadeEffectObject.GetComponent<Desvanecer>(); // Obtener el componente Desvanecer
     }
@@ -25,18 +20,14 @@ public class MoveToPositionAndChangeScene : MonoBehaviour
     {
         if (isMoving)
         {
-            elapsedTime += Time.deltaTime; // Actualizar el tiempo transcurrido
-            float fraction = elapsedTime / totalTime; // Calcular la fracción del tiempo total transcurrido
-
-            // Mover el objeto hacia la posición objetivo y escalarlo de manera suave
-            transform.position = Vector3.Lerp(transform.position, targetPosition, fraction);
-            transform.localScale = Vector3.Lerp(originalScale, targetScale, fraction);
+            // Mover el objeto hacia la posición objetivo
+            float step = speed * Time.deltaTime; // Calcula la distancia a mover en cada frame
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
 
             // Verifica si el objeto ha llegado a la posición objetivo
-            if (fraction >= 1.0f)
+            if (Vector3.Distance(transform.position, targetPosition) < 0.001f)
             {
                 isMoving = false; // Detiene el movimiento
-                elapsedTime = 0; // Resetea el tiempo transcurrido para futuras reutilizaciones
                 if (fadeEffectScript != null)
                 {
                     fadeEffectScript.StartEffect(); // Inicia el efecto de desvanecimiento
@@ -64,6 +55,6 @@ public class MoveToPositionAndChangeScene : MonoBehaviour
     void ChangeScene()
     {
         // Código para cambiar de escena
-        SceneManager.LoadScene("Escena3.2");
+        SceneManager.LoadScene("EscenaParque");
     }
 }

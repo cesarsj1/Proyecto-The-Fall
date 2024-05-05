@@ -1060,7 +1060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4340539383612703545, guid: ef9bab49b1e42aa4eba41b12071319e4, type: 3}
       propertyPath: timeEffect
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4340539383612703545, guid: ef9bab49b1e42aa4eba41b12071319e4, type: 3}
       propertyPath: firstToLast
@@ -1292,6 +1292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9870e1383d83c64799da9642cbb2a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
   fadeEffectObject: {fileID: 1384428212}
 --- !u!61 &932700153
 BoxCollider2D:
@@ -2026,14 +2027,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playOnAwake: 0
-  firstColor: {r: 0, g: 0, b: 0, a: 1}
+  firstColor: {r: 1, g: 1, b: 1, a: 0}
   lastColor: {r: 0, g: 0, b: 0, a: 0}
   timeEffect: 3
-  initialDelay: 1
+  initialDelay: 0
   firstToLast: 0
   pingPong: 0
   pingPongDelay: 0
-  disableWhenFinish: 1
+  disableWhenFinish: 0
   disableDelay: 0
 --- !u!1 &1527669274
 GameObject:
