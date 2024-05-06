@@ -34,7 +34,7 @@ public class ArmarioDrag : MonoBehaviour
 
             if (itemCount == 7) // Verifica si todos los objetos han sido recogidos
             {
-                ChangeScene();
+                
             }
         }
     }
@@ -42,6 +42,6 @@ public class ArmarioDrag : MonoBehaviour
     void ChangeScene()
     {
         // Código para cambiar de escena
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Escena3_2");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("");
     }
 }

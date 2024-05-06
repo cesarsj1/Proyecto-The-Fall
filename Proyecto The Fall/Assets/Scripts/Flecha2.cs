@@ -9,7 +9,7 @@ public class Flecha2 : MonoBehaviour
     public void Button1()
     {
         // Cambia a la escena especificada
-        SceneManager.LoadScene("EscenaParque");
+        SceneManager.LoadScene("OrdenarEstanteria");
     }
     // Start is called before the first frame update
     void Start()

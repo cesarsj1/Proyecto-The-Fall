@@ -1,23 +1,14 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Cambiar4 : MonoBehaviour
+public class Cambiar2_2 : MonoBehaviour
 {
     public Sprite[] sprites;
     private int spriteIndex = 0;
     private bool isClickable = true; // Para controlar si el objeto es clickable
-    public float fadeDuration = 0.5f; // Duración del fade
-
-    public GameObject fadeEffectObject; // Referencia al GameObject con el script Desvanecer
-    private Desvanecer fadeEffectScript; // Referencia al script Desvanecer
-
-    private void Start()
-    {
-        // Inicializar la referencia al script Desvanecer si el objeto está asignado
-        if (fadeEffectObject != null)
-            fadeEffectScript = fadeEffectObject.GetComponent<Desvanecer>();
-    }
+    public float fadeDuration = 0.5f; // Duraci�n del fade
 
     private void OnMouseDown()
     {
@@ -34,7 +25,7 @@ public class Cambiar4 : MonoBehaviour
         // Fade Out
         yield return StartCoroutine(FadeSprite(1, 0, delay / 2)); // Fade out en la mitad del tiempo total
 
-        // Cambio de sprite después del fade out y espera
+        // Cambio de sprite despu�s del fade out y espera
         spriteIndex++;
         if (spriteIndex < sprites.Length)
         {
@@ -43,18 +34,7 @@ public class Cambiar4 : MonoBehaviour
         else
         {
             // Si estamos en el �ltimo sprite, cargamos la escena "EscenaCepillo"
-            SceneManager.LoadScene("JuegoCaja1");
-            // Si estamos en el último sprite, activamos la animación de desvanecimiento antes de cargar la escena
-            if (fadeEffectScript != null)
-            {
-                fadeEffectScript.StartEffect(); // Inicia el efecto de desvanecimiento
-                yield return new WaitUntil(() => fadeEffectScript.HasFinished()); // Espera a que el efecto de desvanecimiento termine
-                SceneManager.LoadScene("JuegoCaja1"); // Cambia la escena después de que el efecto de desvanecimiento haya terminado
-            }
-            else
-            {
-                SceneManager.LoadScene("JuegoCaja1"); // Cambia la escena directamente si no hay efecto de desvanecimiento
-            }
+            SceneManager.LoadScene("Escena1.2.2");
             yield break; // Salimos de la corrutina para evitar que se realice el fade in
         }
 
@@ -63,7 +43,7 @@ public class Cambiar4 : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f); // Espera adicional antes de permitir otro clic
 
-        isClickable = true; // Re-habilita clics después del cambio y espera
+        isClickable = true; // Re-habilita clics despu�s del cambio y espera
     }
 
     IEnumerator FadeSprite(float startAlpha, float endAlpha, float duration)
@@ -80,4 +60,5 @@ public class Cambiar4 : MonoBehaviour
             yield return null;
         }
     }
+
 }

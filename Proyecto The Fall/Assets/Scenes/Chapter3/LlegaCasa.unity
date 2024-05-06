@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b00d9dbe3534e94a864a556acd2691a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaDeCambio: LlegaCasa
+  escenaDeCambio: EscenaCoche
 --- !u!1 &1051720408
 GameObject:
   m_ObjectHideFlags: 0
