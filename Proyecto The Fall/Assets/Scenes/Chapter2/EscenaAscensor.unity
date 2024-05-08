@@ -219,7 +219,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: af369fddda4f4354a9bb45bd52b277e1, type: 3}
   - {fileID: 21300000, guid: becc7dc79d30a064a95589e896f28928, type: 3}
   - {fileID: 21300000, guid: e6f79d196d6186943bd7bad791f0a707, type: 3}
-  changeInterval: 0.2
+  changeInterval: 0.1
 --- !u!212 &175831836
 SpriteRenderer:
   m_ObjectHideFlags: 0

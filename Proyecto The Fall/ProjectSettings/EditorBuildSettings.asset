@@ -74,6 +74,42 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter3/EscenaCoche.unity
     guid: ad4c9518e5026334a946d81ec04bcc8b
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.1.unity
+    guid: c3d1b1684cc4def4f9bf36ae740d4917
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.2.unity
+    guid: b2620579b01c60940b873e056f4e7376
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.3.unity
+    guid: 20ec5f24319061a42bf5086809b965bd
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.4.unity
+    guid: 4a768290be20d3542bc4dfa5003f0115
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.5.unity
+    guid: b603ea5bc81186647b3480fe339ebff5
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.6.unity
+    guid: f97ca4297a25c4b4383f53384304e110
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.7.unity
+    guid: c80d2e95f0022104088cc9f0f524e8a5
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.8.unity
+    guid: 4f1411f147fb89f4a8f9547236ddab47
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.9.unity
+    guid: 1cd5d68002aa624408d2a403c27c4361
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.10.unity
+    guid: 55735b2997bf951438ba31b00ae44ab8
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.11.unity
+    guid: 9b0f37f32e93dd546bd89eda931671dd
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/Escena4.12.unity
+    guid: 6b3aa1a100873724b84867bac2b1b22b
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: f173f72d7927c4c4d9803b6cbd837e60, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 0653989e99b65824abc02574c14cd5c4, type: 2}
