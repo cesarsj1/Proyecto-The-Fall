@@ -301,7 +301,6 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: b755e52115ef6464bb1db21c1da01cb2, type: 3}
   - {fileID: 21300000, guid: bcd6d2fd9da0c2a4882cb5364d8d9f68, type: 3}
-  - {fileID: 21300000, guid: 9a55abb4897a9364ca75bd009182a41f, type: 3}
   fadeDuration: 0.5
 --- !u!1 &982070766
 GameObject:

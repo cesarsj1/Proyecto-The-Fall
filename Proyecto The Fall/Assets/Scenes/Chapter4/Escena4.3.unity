@@ -661,7 +661,6 @@ GameObject:
   - component: {fileID: 1700436388}
   - component: {fileID: 1700436387}
   - component: {fileID: 1700436386}
-  - component: {fileID: 1700436385}
   m_Layer: 0
   m_Name: Secuencia2
   m_TagString: Untagged
@@ -669,24 +668,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1700436385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700436384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b19790be2427c74f817a513b2686ca1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: c31486172b3c81342aa3d6f6a23a42ca, type: 3}
-  fadeDuration: 0.5
-  nextSceneName: Escena4.5
-  useWhiteFade: 0
-  whiteSprite: {fileID: 0}
 --- !u!114 &1700436386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,6 +682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprites:
   - {fileID: 21300000, guid: c31486172b3c81342aa3d6f6a23a42ca, type: 3}
+  - {fileID: 21300000, guid: d3781b676736f2c498ff4b8b0dbfd00c, type: 3}
   - {fileID: 21300000, guid: 015e348a3f39ae04da35240fd55ea87c, type: 3}
   changeInterval: 0.1
 --- !u!61 &1700436387
