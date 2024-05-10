@@ -975,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2e7803a130a48d4ca18c3840830f435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 5
   fadeEffectObject: {fileID: 1384428212}
 --- !u!1 &973135408
 GameObject:

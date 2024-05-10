@@ -19,7 +19,7 @@ public class CepilloPeinar : MonoBehaviour
         if (isMoving)
         {
             timeMoved += Time.deltaTime;
-            if (timeMoved > 5f)
+            if (timeMoved > 3f)
             {
                 SceneManager.LoadScene("EscenaBajar");
                 Debug.Log("Assets destruidos después de 5 segundos de movimiento.");
