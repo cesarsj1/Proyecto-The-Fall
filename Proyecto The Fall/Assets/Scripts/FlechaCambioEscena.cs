@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class FlechaCambioEscena : MonoBehaviour
 {
     // Método que se ejecuta cuando se hace clic en el objeto
+    public string nombreEscena;
     public void Button1()
     {
         // Cambia a la escena especificada
-        SceneManager.LoadScene("Escena1.2.1");
+        SceneManager.LoadScene(nombreEscena);
     }
     // Start is called before the first frame update
     void Start()

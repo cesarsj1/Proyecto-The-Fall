@@ -34,7 +34,7 @@ public class Cambiar2 : MonoBehaviour
         else
         {
             // Si estamos en el �ltimo sprite, cargamos la escena "EscenaCepillo"
-            SceneManager.LoadScene("Escena2.1");
+            SceneManager.LoadScene("EscenaMovil");
             yield break; // Salimos de la corrutina para evitar que se realice el fade in
         }
 

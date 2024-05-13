@@ -152,7 +152,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.92929, y: 0.92929, z: 0.92929}
+  m_LocalScale: {x: 0.9282779, y: 0.9282779, z: 0.9282779}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -198,7 +198,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 72a07476814988345b03864a5a5a0f84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c4f1c7627c06c14dac1f255338679a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -263,13 +263,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 530391044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aac851219fd50744a1d2c7d74d79bc2, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b19790be2427c74f817a513b2686ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 72a07476814988345b03864a5a5a0f84, type: 3}
-  - {fileID: 21300000, guid: 11fa1733793518b42b4af0a538f61b47, type: 3}
+  - {fileID: 21300000, guid: 5c4f1c7627c06c14dac1f255338679a9, type: 3}
+  - {fileID: 21300000, guid: c1906155cbefea74c88c19baabb1f84b, type: 3}
   fadeDuration: 0
+  nextSceneName: Escena2.1
+  useWhiteFade: 0
+  whiteSprite: {fileID: 0}
 --- !u!1 &2005020586
 GameObject:
   m_ObjectHideFlags: 0

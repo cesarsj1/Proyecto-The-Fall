@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SliderComplete : MonoBehaviour
 {
     public Slider slider;  // Referencia al slider
-    public string sceneName = "EscenaMetro";  // Cambia esto al nombre de tu escena deseada
+    public string sceneName;  // Cambia esto al nombre de tu escena deseada
 
     void Update()
     {
