@@ -362,8 +362,8 @@ GameObject:
   m_Component:
   - component: {fileID: 507380630}
   - component: {fileID: 507380629}
-  - component: {fileID: 507380631}
   - component: {fileID: 507380627}
+  - component: {fileID: 507380632}
   m_Layer: 0
   m_Name: Secuencia1
   m_TagString: Untagged
@@ -483,7 +483,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &507380631
+--- !u!114 &507380632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -492,13 +492,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 507380626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28a8b0ad81a3abd4fb416147fd940962, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b19790be2427c74f817a513b2686ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
   - {fileID: 21300000, guid: 3fffdcc015c27d448a00335dcaeac192, type: 3}
-  fadeDuration: 2
-  fadeEffectObject: {fileID: 0}
+  fadeDuration: 1
+  nextSceneName: JuegoCaja1
+  useWhiteFade: 0
+  whiteSprite: {fileID: 0}
 --- !u!1 &599719099
 GameObject:
   m_ObjectHideFlags: 0

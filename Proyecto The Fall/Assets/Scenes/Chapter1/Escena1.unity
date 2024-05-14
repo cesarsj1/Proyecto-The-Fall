@@ -278,7 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 609857831}
   - component: {fileID: 609857832}
-  - component: {fileID: 609857833}
+  - component: {fileID: 609857835}
   - component: {fileID: 609857834}
   m_Layer: 0
   m_Name: Secuencia1
@@ -354,22 +354,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &609857833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609857830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9577e51c9f91e794ca9022d94ba408dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 0f0b1eb624cdd50408d35ecbca07b072, type: 3}
-  - {fileID: 21300000, guid: b3ab5ee56dd4896469950ee652d96d6b, type: 3}
-  fadeDuration: 0
 --- !u!61 &609857834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -415,6 +399,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.449999, y: 44.319153}
   m_EdgeRadius: 0
+--- !u!114 &609857835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609857830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b19790be2427c74f817a513b2686ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 0f0b1eb624cdd50408d35ecbca07b072, type: 3}
+  - {fileID: 21300000, guid: b3ab5ee56dd4896469950ee652d96d6b, type: 3}
+  fadeDuration: 0
+  nextSceneName: EscenaDientes
+  useWhiteFade: 0
+  whiteSprite: {fileID: 0}
 --- !u!1 &1330318015
 GameObject:
   m_ObjectHideFlags: 0

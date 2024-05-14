@@ -270,7 +270,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5c4f1c7627c06c14dac1f255338679a9, type: 3}
   - {fileID: 21300000, guid: c1906155cbefea74c88c19baabb1f84b, type: 3}
   fadeDuration: 0
-  nextSceneName: Escena2.1
+  nextSceneName: EscenaInicio2
   useWhiteFade: 0
   whiteSprite: {fileID: 0}
 --- !u!1 &2005020586

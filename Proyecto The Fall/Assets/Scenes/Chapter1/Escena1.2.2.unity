@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 530391045}
   - component: {fileID: 530391047}
   - component: {fileID: 530391048}
-  - component: {fileID: 530391050}
   - component: {fileID: 530391049}
+  - component: {fileID: 530391050}
   m_Layer: 0
   m_Name: Secuencia2
   m_TagString: Untagged
@@ -280,12 +280,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 530391044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 246d309e585791d4e8fe276649a5e898, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b19790be2427c74f817a513b2686ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
   - {fileID: 21300000, guid: 197ae62ae85fd424084078bb139a522f, type: 3}
   fadeDuration: 0.5
+  nextSceneName: Escena1.2.3
+  useWhiteFade: 0
+  whiteSprite: {fileID: 0}
 --- !u!1 &2005020586
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +325,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.30588236, g: 0.30588236, b: 0.30588236, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

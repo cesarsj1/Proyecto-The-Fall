@@ -7,20 +7,20 @@ public class MenuPrincipal : MonoBehaviour
 { 
     public void cap1() {
 
-        SceneManager.LoadScene("Escena1");
+        SceneManager.LoadScene("EscenaInicio1");
     }
     public void cap2() {
 
-        SceneManager.LoadScene("Escena2.1");
+        SceneManager.LoadScene("EscenaInicio2");
     }
     public void cap3()
     {
 
-        SceneManager.LoadScene("OrdenarEstanteria");
+        SceneManager.LoadScene("EscenaInicio3");
     }
     public void cap4()
     {
 
-        SceneManager.LoadScene("Escena4.1");
+        SceneManager.LoadScene("EscenaInicio4");
     }
 }

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: fc634d0e367084b43824dbba55103759
   - enabled: 1
+    path: Assets/Scenes/Chapter1/EscenaInicio1.unity
+    guid: 4f05bfd7fd7a9e34b89cd6fc7200d8fc
+  - enabled: 1
     path: Assets/Scenes/Chapter1/Escena1.unity
     guid: 36cb33965b615114892fc9ebee2bcbf6
   - enabled: 1
@@ -42,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter1/Escena1.2.4.unity
     guid: 1f0a8fa874261cb4e87cc3c6b68fcabe
   - enabled: 1
+    path: Assets/Scenes/Chapter2/EscenaInicio2.unity
+    guid: 2914ee9c4b1368c48a1cc506fa7a3a71
+  - enabled: 1
     path: Assets/Scenes/Chapter2/Escena2.1.unity
     guid: 569012ecb021b2643be9c5de01113e8a
   - enabled: 1
@@ -59,6 +65,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter2/Escena2.3.unity
     guid: e0df24f2d5235ee4f929a815e5961507
+  - enabled: 1
+    path: Assets/Scenes/Chapter3/EscenaInicio3.unity
+    guid: 088415985be61364c990b82b0b1f31dc
   - enabled: 1
     path: Assets/Scenes/Chapter3/OrdenarEstanteria.unity
     guid: 369aa35fef118a34b89ec42630ded05f
@@ -86,6 +95,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter3/EscenaCoche.unity
     guid: ad4c9518e5026334a946d81ec04bcc8b
+  - enabled: 1
+    path: Assets/Scenes/Chapter4/EscenaInicio4.unity
+    guid: d0fe6ee8954df4a429de259a0ebfaf37
   - enabled: 1
     path: Assets/Scenes/Chapter4/Escena4.1.unity
     guid: c3d1b1684cc4def4f9bf36ae740d4917

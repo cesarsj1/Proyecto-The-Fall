@@ -263,13 +263,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 530391044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aac851219fd50744a1d2c7d74d79bc2, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b19790be2427c74f817a513b2686ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
   - {fileID: 21300000, guid: 72a07476814988345b03864a5a5a0f84, type: 3}
   - {fileID: 21300000, guid: 11fa1733793518b42b4af0a538f61b47, type: 3}
   fadeDuration: 0
+  nextSceneName: EscenaMovil
+  useWhiteFade: 0
+  whiteSprite: {fileID: 0}
 --- !u!1 &2005020586
 GameObject:
   m_ObjectHideFlags: 0
