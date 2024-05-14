@@ -46,4 +46,8 @@ public class Mando : MonoBehaviour
         // Carga la escena definida en el inspector
         UnityEngine.SceneManagement.SceneManager.LoadScene(escenaDeCambio);
     }
+    void Start()
+    {
+        itemCount2 = 0;
+    }
 }

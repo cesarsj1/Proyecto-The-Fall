@@ -45,4 +45,8 @@ public class Bufanda : MonoBehaviour
         // Carga la escena definida en el inspector
         UnityEngine.SceneManagement.SceneManager.LoadScene(escenaDeCambio);
     }
+    void Start()
+    {
+        itemCount = 0;
+    }
 }

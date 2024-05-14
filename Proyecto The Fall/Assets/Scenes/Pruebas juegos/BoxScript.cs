@@ -21,6 +21,10 @@ public class BoxScript : MonoBehaviour
     void ChangeScene()
     {
         // Código para cambiar de escena
-        UnityEngine.SceneManagement.SceneManager.LoadScene("NextSceneName");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MenuPrincipal");
+    }
+    private void Start()
+    {
+        itemCount = 0;
     }
 }

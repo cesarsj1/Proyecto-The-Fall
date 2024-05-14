@@ -44,4 +44,8 @@ public class DragObject : MonoBehaviour
         // Código para cambiar de escena
         UnityEngine.SceneManagement.SceneManager.LoadScene("Escena2.2");
     }
+    void Start()
+    {
+        itemCount = 0;
+    }
 }
