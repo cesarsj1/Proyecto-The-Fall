@@ -32,7 +32,7 @@ public class DragObject : MonoBehaviour
             itemCount++; // Incrementa el contador de objetos recogidos
             Destroy(gameObject); // Destruye el objeto
 
-            if (itemCount == 6) // Verifica si todos los objetos han sido recogidos
+            if (itemCount == 7) // Verifica si todos los objetos han sido recogidos
             {
                 ChangeScene();
             }

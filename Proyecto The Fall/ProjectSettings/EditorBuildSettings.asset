@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuPrincipal.unity
+    path: Assets/Scenes/Menu/MenuPrincipal.unity
     guid: fc634d0e367084b43824dbba55103759
   - enabled: 1
     path: Assets/Scenes/Chapter1/EscenaInicio1.unity
@@ -140,6 +140,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter4/Escena4.12.unity
     guid: 6b3aa1a100873724b84867bac2b1b22b
+  - enabled: 1
+    path: Assets/Scenes/Chapter1/EscenaEdificio.unity
+    guid: c56459bb2167236429e193e267be864e
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: f173f72d7927c4c4d9803b6cbd837e60, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 0653989e99b65824abc02574c14cd5c4, type: 2}

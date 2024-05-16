@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 087a805934019fc4385f09ef9775be0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombreEscena: 
 --- !u!114 &41114184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,6 +932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 087a805934019fc4385f09ef9775be0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombreEscena: 
 --- !u!4 &1222030269
 Transform:
   m_ObjectHideFlags: 0

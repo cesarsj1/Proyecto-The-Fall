@@ -11,7 +11,7 @@ public class BoxScript : MonoBehaviour
             itemCount++; // Incrementa el contador de objetos
             Destroy(other.gameObject); // Destruye el objeto
 
-            if (itemCount == 6) // Verifica si todos los objetos han sido recogidos
+            if (itemCount == 8) // Verifica si todos los objetos han sido recogidos
             {
                 ChangeScene();
             }
