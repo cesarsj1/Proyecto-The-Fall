@@ -24,9 +24,9 @@ public class ImageChanger : MonoBehaviour
         while (true)
         {
             imageComponent.sprite = sprites[index]; // Cambiar el sprite actual
-            index = (index + 1) % sprites.Length; // Actualizar el índice, rotar de vuelta a 0 si excede la cantidad de sprites
+            index = (index + 1) % sprites.Length; // Actualizar el ï¿½ndice, rotar de vuelta a 0 si excede la cantidad de sprites
             yield return new WaitForSeconds(changeInterval); // Esperar el intervalo de tiempo antes de cambiar de nuevo
-        }
+            }
     }
 
 }

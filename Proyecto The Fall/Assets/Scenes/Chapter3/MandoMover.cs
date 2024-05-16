@@ -6,7 +6,7 @@ public class MandoMover : MonoBehaviour
 {
     public float speed = 1f; // Velocidad a la que el objeto se moverá hacia la posición deseada
     private bool isMoving = false; // Controla si el objeto debe moverse
-    private Vector3 targetPosition = new Vector3(0, 0, 0); // La posición objetivo a la que se moverá el objeto
+    private Vector3 targetPosition = new Vector3(0, 0); // La posición objetivo a la que se moverá el objeto
     public GameObject fadeEffectObject; // El GameObject que tiene el script Desvanecer
     private Desvanecer fadeEffectScript; // Referencia al script Desvanecer
 
