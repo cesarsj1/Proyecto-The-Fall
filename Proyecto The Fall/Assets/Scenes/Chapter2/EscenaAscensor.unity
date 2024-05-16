@@ -528,7 +528,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9a55abb4897a9364ca75bd009182a41f, type: 3}
   - {fileID: 21300000, guid: 580ef083e2c5efd45a2dc1fb82e48b8d, type: 3}
   fadeDuration: 0.5
-  nextSceneName: EscenaCartas
+  nextSceneName: EscenaPreCartas
   useWhiteFade: 0
   whiteSprite: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

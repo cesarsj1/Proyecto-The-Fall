@@ -1,63 +1,53 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AssetMover : MonoBehaviour
 {
-    public GameObject[] assets; // Array de todos los objetos
-    public Vector3[] startPositions; // Posiciones iniciales fuera de la cámara
-    public Vector3[] insidePositions; // Posiciones dentro de la cámara
-    private bool[] touched; // Para controlar si el objeto ya fue tocado
-    public string nextSceneName; // Nombre de la próxima escena a cargar
-
-    void Start()
-    {
-        if (assets.Length != startPositions.Length || assets.Length != insidePositions.Length)
-        {
-            Debug.LogError("Configuration error: Arrays must be of the same length.");
-            return;
-        }
-
-        touched = new bool[assets.Length];
-        for (int i = 0; i < assets.Length; i++)
-        {
-            assets[i].transform.position = startPositions[i];
-            StartCoroutine(MoveInside(i));
-        }
-    }
-
-    IEnumerator MoveInside(int index)
-    {
-        yield return new WaitForSeconds(1f); // Pequeña demora antes de mover cada objeto
-        assets[index].transform.position = insidePositions[index];
-    }
+    public Vector3 newPosition; // Posición nueva a la que se moverá el objeto
+    private bool isMoving = false;
+    private float speed = 5f; // Velocidad de movimiento, ajustable desde el Inspector
 
     void Update()
     {
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+        if (isMoving)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            transform.position = Vector3.MoveTowards(transform.position, newPosition, speed * Time.deltaTime);
+            if (transform.position == newPosition)
             {
-                int index = System.Array.IndexOf(assets, hit.transform.gameObject);
-                if (index != -1)
+                isMoving = false;
+            }
+        }
+
+        // Manejo de entrada táctil
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                if (Physics.Raycast(ray, out hit))
                 {
-                    assets[index].transform.position = startPositions[index];
-                    touched[index] = true;
-                    CheckAllTouched();
+                    if (hit.collider.gameObject == this.gameObject)
+                    {
+                        Disappear();
+                    }
                 }
             }
         }
     }
-
-    void CheckAllTouched()
+    private void Start()
     {
-        foreach (bool wasTouched in touched)
-        {
-            if (!wasTouched) return;
-        }
-        SceneManager.LoadScene(nextSceneName);
+        Move();
+    }
+
+    public void Move()
+    {
+        isMoving = true;
+    }
+
+    public void Disappear()
+    {
+        gameObject.SetActive(false);
+        FindObjectOfType<GameManager>().CheckAllObjectsDisabled();
     }
 }
