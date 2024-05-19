@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FlechaCambioEscena : MonoBehaviour
 {
-    // Método que se ejecuta cuando se hace clic en el objeto
+    // Metodo que se ejecuta cuando se hace clic en el objeto
     public string nombreEscena;
     public void Button1()
     {

@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CepilloDientes : MonoBehaviour
+public class Brush : MonoBehaviour
 {
     private Vector3 startPosition;
     private float timeMoved = 0f;
     private bool isMoving = false;
+
+    [SerializeField] private float timeRequire = 3f; // Tiempo necesario para mover el objeto antes de cambiar la escena
+    [SerializeField] private string sceneName = "EscenaPelos"; // Nombre de la escena a cargar
 
     void Start()
     {
@@ -19,10 +22,10 @@ public class CepilloDientes : MonoBehaviour
         if (isMoving)
         {
             timeMoved += Time.deltaTime;
-            if (timeMoved > 3f)
+            if (timeMoved > timeRequire)
             {
-                SceneManager.LoadScene("EscenaPelos");
-                Debug.Log("Assets destruidos despu�s de 3 segundos de movimiento.");
+                SceneManager.LoadScene(sceneName);
+                Debug.Log("Assets destruidos después de " + timeRequire + " segundos de movimiento.");
             }
         }
 
@@ -37,6 +40,7 @@ public class CepilloDientes : MonoBehaviour
         {
             transform.position = startPosition;
             isMoving = false;
+            timeMoved = 0f; // Restablecer el contador de tiempo cuando se suelta el botón
         }
     }
 }

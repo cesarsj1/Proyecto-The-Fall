@@ -8,7 +8,7 @@ public class TapyCambiar : MonoBehaviour
     public Sprite[] sprites;
     private int spriteIndex = 0;
     private bool isClickable = true; // Para controlar si el objeto es clickable
-    public float fadeDuration = 0.5f; // Duración del fade
+    public float fadeDuration = 0.5f; // Duracion del fade
 
     public string nextSceneName; // Nombre de la escena a cargar
     public bool useWhiteFade; // Activar o desactivar el fade blanco desde el inspector
@@ -29,7 +29,7 @@ public class TapyCambiar : MonoBehaviour
         // Fade Out
         yield return StartCoroutine(FadeSprite(1, 0, delay / 2)); // Fade out en la mitad del tiempo total
 
-        // Cambio de sprite después del fade out y espera
+        // Cambio de sprite despues del fade out y espera
         spriteIndex++;
         if (spriteIndex < sprites.Length)
         {
@@ -42,7 +42,7 @@ public class TapyCambiar : MonoBehaviour
                 GetComponent<SpriteRenderer>().sprite = whiteSprite; // Aplica el sprite blanco
                 yield return StartCoroutine(FadeSprite(0, 1, fadeDuration)); // Realiza un fade in al blanco
                 yield return new WaitForSeconds(fadeDuration); // Mantiene el sprite blanco durante el tiempo del fade
-                SceneManager.LoadScene(nextSceneName); // Carga la próxima escena
+                SceneManager.LoadScene(nextSceneName); // Carga la proxima escena
             }
             else
             {
@@ -57,7 +57,7 @@ public class TapyCambiar : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f); // Espera adicional antes de permitir otro clic
 
-        isClickable = true; // Re-habilita clics después del cambio y espera
+        isClickable = true; // Re-habilita clics despues del cambio y espera
     }
 
     IEnumerator FadeSprite(float startAlpha, float endAlpha, float duration)

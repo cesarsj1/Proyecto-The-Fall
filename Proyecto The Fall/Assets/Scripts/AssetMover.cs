@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AssetMover : MonoBehaviour
 {
-    public Vector3 newPosition; // Posición nueva a la que se moverá el objeto
+    public Vector3 newPosition; // Posicion nueva a la que se mover el objeto
     private bool isMoving = false;
     private float speed = 5f; // Velocidad de movimiento, ajustable desde el Inspector
 
@@ -17,7 +17,7 @@ public class AssetMover : MonoBehaviour
             }
         }
 
-        // Manejo de entrada táctil
+        // Manejo de entrada tactil
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);

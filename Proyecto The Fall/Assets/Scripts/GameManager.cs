@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] objectsToMove; // Lista de todos los objetos que pueden moverse y desaparecer
     public string nextSceneName = "NextScene"; // Nombre de la escena siguiente
 
-    // Método para iniciar el movimiento de todos los objetos
+    // Metodo para iniciar el movimiento de todos los objetos
     public void MoveAllObjects()
     {
         foreach (var obj in objectsToMove)
@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Verifica si todos los objetos están desactivados
+    // Verifica si todos los objetos estan desactivados
     public void CheckAllObjectsDisabled()
     {
         foreach (var obj in objectsToMove)
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
             if (obj.activeInHierarchy)
                 return;
         }
-        // Cambia de escena si todos los objetos están desactivados
+        // Cambia de escena si todos los objetos estan desactivados
         SceneManager.LoadScene(nextSceneName);
     }
 }
